@@ -1,0 +1,225 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:project >-----------------------
+[INFO] Building project 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (create-revision) @ project ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/home/git/project' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /home/git/project
+[INFO] Storing buildNumber: fcb82fc at timestamp: 1581533456743
+[INFO] Storing buildScmBranch: master
+[INFO]
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (create-timestamp) @ project ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ project ---
+[WARNING] Rule 0: org.apache.maven.plugins.enforcer.RequireUpperBoundDeps failed with message:
+Failed while enforcing RequireUpperBoundDeps. The error(s) are [
+Require upper bound dependencies error for org.slf4j:slf4j-api:1.7.28 paths to dependency are:
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example.framework:standalone-service:1.36.0
+    +-org.slf4j:slf4j-api:1.7.28
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-api-impl:1.14.0
+    +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.7
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-core:1.14.0
+    +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.7
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-io.github.microutils:kotlin-logging:1.7.8
+    +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.29
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-test:1.14.0
+    +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.29
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-environment:1.14.0
+      +-org.slf4j:slf4j-api:1.7.28
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-logging:1.36.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.22
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-sentry:1.36.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.22
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.2
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-http-server:1.36.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.5
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-nameless:1.36.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.5
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:config:1.14.5
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.7
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-api-impl:1.14.0
+    +-com.example:framework-route:1.14.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.7
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-com.example.metrics:semantic-metrics-core:1.0.2 (managed) <-- com.example.metrics:semantic-metrics-core:0.4.2
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-io.dropwizard.metrics:metrics-jvm:4.0.2
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-com.example.ffwd:ffwd-http-client:0.4.0
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.10
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-com.example.metrics:semantic-metrics-ffwd-reporter:1.0.2
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-com.example.metrics:semantic-metrics-ffwd-http-reporter:1.0.2
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-metrics:1.14.0
+    +-io.dropwizard.metrics:metrics-core:4.0.2
+      +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-logging:1.36.0
+      +-com.example:logging:2.2.6
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-sentry:1.36.0
+      +-com.getsentry.raven:raven-logback:7.8.2
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.22
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:framework-request-logging:1.36.0
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.2
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:hermes-java:2.23.0
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-http-server:1.36.0
+      +-com.example:hermes-http:0.11.0
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.5
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-nameless:1.36.0
+      +-com.example:nameless-client:2.5.0
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.20
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-net.javacrumbs.json-unit:json-unit-assertj:2.8.1
+    +-net.javacrumbs.json-unit:json-unit-json-path:2.8.1
+      +-com.jayway.jsonpath:json-path:2.4.0
+        +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-logging:1.36.0
+      +-com.example:logging:2.2.6
+        +-ch.qos.logback:logback-classic:1.2.3
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.25
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-sentry:1.36.0
+      +-com.getsentry.raven:raven-logback:7.8.2
+        +-com.getsentry.raven:raven:7.8.2
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.22
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:framework-request-logging:1.36.0
+        +-com.example:framework-extra:1.14.0
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.2
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:hermes-java:2.23.0
+        +-com.yammer.metrics:metrics-core:2.2.0
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.2
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:hermes-java:2.23.0
+        +-com.example:metrics-munin-reporter:0.8.16
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.5
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-com.example:framework-standalone-service:1.36.0
+    +-com.example:framework-hermes:1.36.0
+      +-com.example:hermes-java:2.23.0
+        +-com.example:dns:3.1.5 (managed) <-- com.example:dns:3.1.4
+          +-org.slf4j:slf4j-api:1.7.28 (managed) <-- org.slf4j:slf4j-api:1.7.5
+,
+Require upper bound dependencies error for org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50 paths to dependency are:
++-com.example:project:0.0.1-SNAPSHOT
+  +-io.github.microutils:kotlin-logging:1.7.8
+    +-org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61
+    +-org.jetbrains.kotlin:kotlin-stdlib:1.3.61
+      +-org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50
+and
++-com.example:project:0.0.1-SNAPSHOT
+  +-org.jetbrains.kotlin:kotlin-test:1.3.61
+    +-org.jetbrains.kotlin:kotlin-test-common:1.3.61
+      +-org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61
+]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.935 s
+[INFO] Finished at: 2020-02-12T13:50:59-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-enforcer-plugin:1.4.1:enforce (enforce) on project project: Some Enforcer rules have failed. Look above for specific messages explaining why the rule failed. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
